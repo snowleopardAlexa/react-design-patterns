@@ -4,8 +4,8 @@ import { RegularList } from './RegularList';
 import { NumberedList } from './NumberedList';
 import { SmallPersonListItem }  from './people/SmallPersonListItem';
 import { LargePersonListItem }  from './people/LargePersonListItem';
-import { SmallProductListItem }  from './people/SmallProductListItem';
-import { LargeProductListItem }  from './people/LargeProductListItem';
+import { SmallProductListItem }  from './products/SmallProductListItem';
+import { LargeProductListItem }  from './products/LargeProductListItem';
 
 const LeftHandComponent = ({ name }) => {
   return <h1 style={{backgroundColor: "red"}}>{name}</h1>

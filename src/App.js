@@ -50,7 +50,6 @@ const products = [{
   raiting: 4.5,
 }];
 
-
 function App() {
   return (
     <>

@@ -19,7 +19,7 @@ const ModalBody = styled.div`
   width: 50%;
 `;
 
-export const Modal = ({ childen }) => {
+export const Modal = ({ children }) => {
     const [shouldShow, setShouldShow] = useState(false);
 
     return (

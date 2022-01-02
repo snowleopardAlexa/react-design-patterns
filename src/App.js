@@ -6,6 +6,7 @@ import { SmallPersonListItem }  from './people/SmallPersonListItem';
 import { LargePersonListItem }  from './people/LargePersonListItem';
 import { SmallProductListItem }  from './products/SmallProductListItem';
 import { LargeProductListItem }  from './products/LargeProductListItem';
+import { Modal } from './Modal';
 
 const LeftHandComponent = ({ name }) => {
   return <h1 style={{backgroundColor: "red"}}>{name}</h1>
@@ -80,6 +81,9 @@ function App() {
      resourceName="product"
      itemComponent={LargeProductListItem} 
     />
+    <Modal>
+      <LargeProductListItem product={products[0]} />
+    </Modal>
    </>
   );
 }

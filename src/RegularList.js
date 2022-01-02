@@ -1,7 +1,7 @@
 export const RegularList = ({ 
     items, 
     resourceName,
-    itemComponent: itemComponent,
+    itemComponent: ItemComponent,
  }) => {
      return (
          <>

@@ -1,8 +1,8 @@
 import { SplitScreen } from './SplitScreen';
 import './App.css';
 import { RegularList } from './RegularList';
-import { SmallPersonListItem } from './people/SmallPersonListItem';
-import { LargePersonListItem } from './people/LargePersonListItem';
+import { SmallPersonListItem }  from './people/SmallPersonListItem';
+import { LargePersonListItem }  from './people/LargePersonListItem';
 
 const LeftHandComponent = ({ name }) => {
   return <h1 style={{backgroundColor: "red"}}>{name}</h1>

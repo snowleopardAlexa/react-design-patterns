@@ -1,8 +1,11 @@
 import { SplitScreen } from './SplitScreen';
 import './App.css';
 import { RegularList } from './RegularList';
+import { NumberedList } from './NumberedList';
 import { SmallPersonListItem }  from './people/SmallPersonListItem';
 import { LargePersonListItem }  from './people/LargePersonListItem';
+import { SmallProductListItem }  from './people/SmallProductListItem';
+import { LargeProductListItem }  from './people/LargeProductListItem';
 
 const LeftHandComponent = ({ name }) => {
   return <h1 style={{backgroundColor: "red"}}>{name}</h1>
@@ -62,10 +65,20 @@ function App() {
      resourceName="person"
      itemComponent={SmallPersonListItem} 
     />
+     <NumberedList
+      items={people}
+      resourceName="person"
+      itemComponent={LargePersonListItem} 
+    />
     <RegularList
-     items={people}
-     resourceName="person"
-     itemComponent={LargePersonListItem} 
+     items={products}
+     resourceName="product"
+     itemComponent={SmallProductListItem} 
+    />
+     <NumberedList
+     items={products}
+     resourceName="product"
+     itemComponent={LargeProductListItem} 
     />
    </>
   );
